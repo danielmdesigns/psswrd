@@ -1,4 +1,4 @@
-(function(){
+/*(function(){
   'use strict';
   // click events
   document.body.addEventListener("click", copy, true);
@@ -22,7 +22,7 @@
       }
     }
   }
-})();
+})();*/
 
 /*global jQuery */
 /*!
@@ -34,6 +34,8 @@
  *
  * Date: Thu May 05 14:23:00 2011 -0600
  */
+
+
 
 (function($){
   $.fn.fitText = function(kompressor, options){
