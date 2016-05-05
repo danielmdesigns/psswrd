@@ -52,34 +52,21 @@ footer {
 
 .brand {
   width: 50px;
-  text-align: center;
   margin: 0 auto;
 }
 
-.credit {
-  width: 30px;
-  margin: 0 auto;
-}
-
-main {
+.brand,
+main,
+footer {
   text-align: center;
 }
 
 .display {
   font-family: "salomeregular", "Playfair Display", serif;
   color: white;
-}
-
-.display {
   font-size: 5rem;
-  text-align: center;
   margin: 8rem auto 3rem;
   text-shadow: 2px 2px 25px rgba(0, 0, 0, 0.5);
-}
-
-span {
-  font-size: 0.9rem;
-  font-family: "Playfair Display", serif;
 }
 
 button {
@@ -100,18 +87,16 @@ button.copy {
   background-color: transparent;
   letter-spacing: 3px;
   position: relative;
-}
-
-button.copy:hover {
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-}
-
-button.copy, i {
   transition: all 0.5s ease;
 }
 
-button.copy:hover, i:hover {
+button.copy:hover {
   transform: scale(1.05);
+}
+
+span {
+  font-size: 1rem;
+  font-family: "Playfair Display", serif;
 }
 
 button.refresh {
@@ -124,7 +109,6 @@ button.refresh {
   background-color: white;
   color: #9844B7;
   border: 0;
-  text-align: center;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
   animation: spin-back 0.75s ease-out;
 }
@@ -162,21 +146,6 @@ a:focus {
   outline: none;
 }
 
-.twitter,
-.github {
-  cursor: pointer;
-  font-size: 1.5rem;
-  display: inline;
-  width: 100%;
-  margin-right: 20px;
-  text-align: center;
-}
-
-.twitter:last-of-type,
-.github:last-of-type {
-  margin-right: 0;
-}
-
 footer {
   font-size: 0.8rem;
   text-transform: uppercase;
@@ -192,17 +161,27 @@ footer {
   text-align: center;
 }
 
-@media (min-width: 420px) {
-  footer .credit {
-    float: left;
-  }
-  footer .social {
-    float: right;
-  }
+footer .social {
+  margin: 30px 0 0 0;
 }
 
-@media (max-width: 421px) {
-  .social {
-    margin: 30px 0 0 0;
-  }
+.credit {
+  width: 20px;
+  margin: 0 auto;
+  display: inline-block;
+  padding-right: 20px;
+}
+
+.twitter,
+.github {
+  cursor: pointer;
+  font-size: 1.5rem;
+  display: inline;
+  width: 100%;
+  margin-right: 20px;
+}
+
+.twitter:last-of-type,
+.github:last-of-type {
+  margin-right: 0;
 }
