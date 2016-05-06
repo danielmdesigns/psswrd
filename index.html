@@ -2,15 +2,16 @@
 <html >
 <head>
 <meta charset="UTF-8">
-<title>psswrd app</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Psswrd - Generate password and wifi keys</title>
+<meta name="description" content="Psswrd is a smart tool that allows you to generate password and wifi keys with a single click">
+<meta name="viewport" content="initial-scale=1,minimum-scale=1,maximum-scale=1">
 <link href="https://fonts.googleapis.com/css?family=Playfair+Display:900|Montserrat:700,400" rel="stylesheet" type="text/css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
 <link rel="stylesheet" href="css/reset.css">
 <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="css/salome.css">
 
-<meta name="apple-mobile-web-app-title" content="Psswrd" />
+<meta name="apple-mobile-web-app-title" content="Psswrd">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -240,5 +241,11 @@ $(".display").fitText(0.5, {
 </script>
 <script src="js/copytoclipboard.js"></script>
 <script src="js/generate.pw.js"></script>
+<script>
+if(/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)){
+  $(".copy").hide();
+  $(".refresh").css({marginLeft:"0"});
+}
+</script>
   </body>
 </html>
