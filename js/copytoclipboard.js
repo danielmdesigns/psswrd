@@ -3,7 +3,6 @@ document.getElementById("js-copy").addEventListener("click", function(){
   copyToClipboardMsg(document.getElementById("js-display"), "msg");
 });
 
-
 function copyToClipboardMsg(elem, msgElem){
   "use strict";
   var succeed = copyToClipboard(elem);
