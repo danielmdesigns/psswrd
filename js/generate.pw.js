@@ -11,19 +11,9 @@ function password(){
     output += charcter.charAt(Math.floor(Math.random()*random));
   }
   
-/* TEST LOOP
-function loop(){
-  for(i=0;i<10;i++){
-    document.write(i+"<br>");
-  }
-}
-loop();
-*/
-  
   return output;
   //return result.toUpperCase();
 }
-
 
 //generate a password & put it in my h1 tag
 function refresh(){
