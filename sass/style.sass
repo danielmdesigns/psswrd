@@ -73,13 +73,16 @@ button.copy
   background-color: transparent
   letter-spacing: 3px
   position: relative
-  transition: all 0.5s ease
+  transition: all 0.4s ease
+  transition-property: background-color, color
   &:hover
-  	transform: scale(1.050)
+  	color: #9844B7
+  	background-color: white
+  &:active
+  	transform: scale(0.99)
 	
 span
-  font-size: 1rem
-  font-family: "Playfair Display", serif  
+	font-family: "Playfair Display", serif  
   
 button.refresh
   height: 46px
@@ -93,16 +96,20 @@ button.refresh
   border: 0
   box-shadow: 0 0 20px rgba(0,0,0,0.5)
   animation: spin-back 0.75s ease-out
-  &:hover
-    cursor: pointer
-    animation: spin 0.75s ease-out
-  
+button.refresh:hover
+  cursor: pointer
+  animation: spin 0.75s ease-out
+button.refresh:active
+  cursor: pointer
+  transform: scale(0.98)
+  animation: spin-again 0.75s ease-out
+	
 @keyframes spin
   0%
     transform: rotate(0deg)
   100%
     transform: rotate(360deg)
-  
+	
 @keyframes spin-back
   100%
     transform: rotate(0deg)

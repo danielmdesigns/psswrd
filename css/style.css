@@ -87,15 +87,20 @@ button.copy {
   background-color: transparent;
   letter-spacing: 3px;
   position: relative;
-  transition: all 0.5s ease;
+  transition: all 0.4s ease;
+  transition-property: background-color, color;
 }
 
 button.copy:hover {
-  transform: scale(1.05);
+  color: #9844B7;
+  background-color: white;
+}
+
+button.copy:active {
+  transform: scale(0.99);
 }
 
 span {
-  font-size: 1rem;
   font-family: "Playfair Display", serif;
 }
 
@@ -116,6 +121,12 @@ button.refresh {
 button.refresh:hover {
   cursor: pointer;
   animation: spin 0.75s ease-out;
+}
+
+button.refresh:active {
+  cursor: pointer;
+  transform: scale(0.98);
+  animation: spin-again 0.75s ease-out;
 }
 
 @keyframes spin {
