@@ -51,21 +51,28 @@
 </main>
 
 <footer>
-	<a class="twitter" href="https://twitter.com/danielmdesigns" target="_blank">
-    	<img src="img/icon-twitter.png" alt="Twitter Icon">
-    </a>
-    <a class="github" href="https://github.com/danielmdesigns" target="_blank">
-    	<img src="img/icon-github.png" alt="Github Icon">
-    </a>
+	<a class="twitter" href="https://twitter.com/danielmdesigns" target="_blank"><img src="img/icon-twitter.png" alt="Twitter Icon"></a>
+    <a class="github" href="https://github.com/danielmdesigns" target="_blank"><img src="img/icon-github.png" alt="Github Icon"></a>
 </footer>
 
 </div>
 
 <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
 <script src="js/jquery.fittext.js"></script>
-<script src="js/custom.js"></script>
+<script>
+$(".display").fitText(0.5, {
+  minFontSize: "40px",
+  maxFontSize: "140px"
+});
+</script>
 <script src="js/copytoclipboard.js"></script>
 <script src="js/generate.pw.js"></script>
+<script>
+if(/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)){
+  $(".copy").hide();
+  $(".refresh").css({marginLeft:"0"});
+}
+</script>
 
 </body>
 </html>
