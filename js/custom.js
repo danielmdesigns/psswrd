@@ -10,7 +10,6 @@ $("#js-display").fitText(0.5, {
   maxFontSize: "140px"
 });
 
-
 $("#js-refresh").click(function(){ 
   "use strict";
   $("#js-refresh").toggleClass("btn-spin");
