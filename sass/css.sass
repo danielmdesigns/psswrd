@@ -29,6 +29,7 @@ body
 a, img
 	border: none
 	outline: none
+	text-decoration: none
   
 .container
 	margin: 0 auto
@@ -70,14 +71,17 @@ h1
 		border-radius: 100%
 		margin-left: 10px
 		box-shadow: 0 0 20px rgba(0,0,0,0.5)
+		transition: box-shadow 0.5s ease
 		&:hover
-			animation: spin-back 0.75s ease-out
+			box-shadow: 0 0 20px rgba(0,0,0,0.7)
 		&:active
-			animation: spin 0.75s ease-out
 		img
 			position: relative
 			top: 2px
 			left: -1px
+			
+.btn-spin
+	animation: spin 0.75s ease-out
 
 .github
 	margin-left: 10px
@@ -92,12 +96,12 @@ h1
 	
 @keyframes spin
   0%
-    transform: rotate(0deg)
-  100%
     transform: rotate(360deg)
-	
-@keyframes spin-back
   100%
     transform: rotate(0deg)
-  0%
-    transform: rotate(359deg)
+
+@media(max-width: 361px)
+	.btn-refresh
+		margin-left: 0
+		margin-top: 10px
+		
