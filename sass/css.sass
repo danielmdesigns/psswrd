@@ -40,6 +40,9 @@ a, img
 main
 	margin: 150px 0
 	
+.logo
+	height: 60px
+	
 h1
 	font-family: "salomeregular", "Playfair Display", serif
 	font-size: 6rem
@@ -47,7 +50,8 @@ h1
 
 .btn-group
 	margin-top: 50px
-	.btn-copy, .btn-refresh
+	.btn-copy,
+	.btn-refresh
 		display: inline-block
 		cursor: pointer
 	.btn-copy
@@ -67,7 +71,7 @@ h1
 			font-family: "Playfair Display", serif
 	.btn-refresh
 		background-color: $white
-		padding: 20px
+		padding: 17px
 		border-radius: 100%
 		margin-left: 10px
 		box-shadow: 0 0 20px rgba(0,0,0,0.5)
@@ -76,12 +80,18 @@ h1
 			box-shadow: 0 0 20px rgba(0,0,0,0.7)
 		&:active
 		img
+			height: 20px
+			width: 23px
 			position: relative
 			top: 2px
 			left: -1px
 			
 .btn-spin
 	animation: spin 0.75s ease-out
+
+.twitter,
+.github
+	height: 25px
 
 .github
 	margin-left: 10px
